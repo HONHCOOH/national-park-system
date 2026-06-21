@@ -1,7 +1,7 @@
 <template>
   <div class="chat-page">
-    <el-row :gutter="16">
-      <el-col :span="16">
+    <el-row :gutter="15">
+      <el-col :span="15">
         <div class="dashboard-card chat-container">
           <div class="card-title">
             <el-icon><ChatDotRound /></el-icon> AI决策助手

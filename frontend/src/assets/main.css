@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dashboard-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1890ff;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.alert-red { color: #ff4d4f; }
+.alert-orange { color: #fa8c16; }
+.alert-yellow { color: #fadb14; }
+.alert-blue { color: #1890ff; }
+
+.risk-low { color: #52c41a; background: #f6ffed; }
+.risk-medium { color: #faad14; background: #fffbe6; }
+.risk-high { color: #fa8c16; background: #fff7e6; }
+.risk-extreme { color: #ff4d4f; background: #fff2f0; }
+
+.zone-type-森林 { color: #52c41a; }
+.zone-type-湿地 { color: #1890ff; }
+.zone-type-草原 { color: #fa8c16; }
+.zone-type-高山 { color: #722ed1; }
+
+.page-slide-fade-enter-active {
+  animation: page-in 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-slide-fade-leave-active {
+  animation: page-out 0.25s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+@keyframes page-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes page-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
